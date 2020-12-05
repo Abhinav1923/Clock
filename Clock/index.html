@@ -121,9 +121,9 @@
       hours = b.getHours();
       if (hours < 12) {
         document.getElementById("sun-morning").style.display = "initial";
-      } else if ((hours >= 12) & (hours <= 17)) {
+      } else if ((hours >= 12) & (hours < 17)) {
         document.getElementById("sun-afternoon").style.display = "initial";
-      } else if ((hours > 17) & (hours <= 20)) {
+      } else if ((hours >= 17) & (hours <= 20)) {
         document.getElementById("sun-evening").style.display = "initial";
       } else {
         document.getElementById("night").style.display = "initial";
